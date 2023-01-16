@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_TRP.Views.LoginPage"
+             Title=""
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="False"  
+             BackgroundImageSource="landing_background"
+             NavigationPage.HasNavigationBar="False">
+
+
+    <ScrollView VerticalOptions="FillAndExpand">
+
+        <Grid>
+            <StackLayout Margin="0,100,0,0" HorizontalOptions="CenterAndExpand">
+                <Image Source="app_logo" VerticalOptions="Start" HeightRequest="120" />
+                <Label 
+                   Text="Explore.Plan.Connect."
+                   TextColor="White" FontSize="Large"></Label>
+
+            </StackLayout>
+
+            <StackLayout 
+                VerticalOptions="End" HorizontalOptions="FillAndExpand"
+                Padding="20"
+                Margin="0,0,0,70"
+                Spacing="10">
+
+                <Frame BackgroundColor="Transparent" 
+                   BorderColor="White" 
+                   Padding="0">
+                    <Entry Placeholder="Email" 
+                       TextColor="White"
+                       HeightRequest="50"
+                       PlaceholderColor="White" 
+                       BackgroundColor="Transparent">
+                    </Entry>
+                </Frame>
+
+                <Frame 
+                    BackgroundColor="Transparent" 
+                    BorderColor="White" 
+                    Padding="0">
+                    <Entry Placeholder="Password" 
+                       TextColor="White"
+                       HeightRequest="50"
+                       PlaceholderColor="White" 
+                       BackgroundColor="Transparent">
+                    </Entry>
+                </Frame>
+
+                <Frame 
+                    BackgroundColor="Black"
+                    BorderColor="Black"
+                    Padding="0"
+                    Margin="0,10,0,0">
+                    <Button 
+                        TextColor="White"
+                        Margin="8"
+                        Text="Sign In"
+                        FontSize="20"
+                        BackgroundColor="Transparent">
+                    </Button>
+                </Frame>
+
+                <Frame 
+                    BackgroundColor="White" 
+                    Padding="0">
+                    <Button 
+                        TextColor="Black"
+                        Clicked="OnCreateAccountClicked"
+                        Margin="8"
+                        Text="Create Account"
+                        FontSize="20"
+                        BackgroundColor="Transparent">
+                    </Button>
+                </Frame>
+
+            </StackLayout>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

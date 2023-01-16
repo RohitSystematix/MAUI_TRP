@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_TRP.Views.RegistrationPage"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="False"
+             BackgroundImageSource="landing_background"
+             NavigationPage.HasNavigationBar="False">
+
+    <ScrollView VerticalOptions="FillAndExpand" Margin="0, 0, 0, 0">
+
+        <Grid x:Name="SendUI"
+            >
+
+            <Image Source="app_logo" VerticalOptions="Start" HeightRequest="120" Margin="0, 50, 0, 0"/>
+
+            <Frame BackgroundColor="White" VerticalOptions="EndAndExpand" CornerRadius="30">
+
+                <StackLayout>
+                    <StackLayout Spacing="3">
+                        <Label Text="Create Account" TextColor="Black" FontSize="Large" HorizontalOptions="Center"/>
+
+                        <BoxView 
+                            Color="Green" 
+                            HeightRequest="3"  
+                            CornerRadius="10" 
+                            WidthRequest="40"                     
+                            HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                    <StackLayout Margin="0, 10, 0, 0" Spacing="10">
+
+                        <Frame 
+                            BackgroundColor="Transparent" 
+                            BorderColor="Grey" 
+                            Padding="0">
+                            <Entry 
+                                Placeholder="Full Name" 
+                                TextColor="Black"                        
+                                Margin="5, 0"
+                                HeightRequest="50"                                  
+                                BackgroundColor="Transparent">
+                            </Entry>
+                        </Frame>
+
+                        <Frame 
+                            BackgroundColor="Transparent" 
+                            BorderColor="Grey" 
+                            Padding="0">
+                            <Entry 
+                                Placeholder="Email" 
+                                TextColor="Black"
+                                Margin="5, 0"
+                                HeightRequest="50"                                     
+                                BackgroundColor="Transparent">
+                            </Entry>
+                        </Frame>
+
+                        <Frame 
+                            BackgroundColor="Transparent" 
+                            BorderColor="Grey" 
+                            Padding="0">
+                            <Entry 
+                                Placeholder="Password" 
+                                TextColor="Black"
+                                Margin="5, 0"
+                                HeightRequest="50"                               
+                                IsPassword="True"
+                                BackgroundColor="Transparent">
+                            </Entry>
+                        </Frame>
+
+                        <Frame 
+                            BackgroundColor="Transparent" 
+                            BorderColor="Grey" 
+                            Padding="0">
+                            <Entry 
+                                Placeholder="Confirm Password" 
+                                TextColor="Black"
+                                Margin="5, 0"
+                                HeightRequest="50"
+                                Focused="Entry_Focused"
+                                Unfocused="Entry_Unfocused"
+                                IsPassword="True"
+                                BackgroundColor="Transparent">
+                            </Entry>
+                        </Frame>
+
+                        <Frame 
+                            BackgroundColor="Transparent" 
+                            BorderColor="Grey" 
+                            Padding="0">
+                            <Entry 
+                                Placeholder="Mobile Number" 
+                                TextColor="Black"
+                                Margin="5, 0"
+                                HeightRequest="50"
+                                Focused="Entry_Focused"
+                                Unfocused="Entry_Unfocused"
+                                BackgroundColor="Transparent">
+                            </Entry>
+                        </Frame>
+
+                        <Frame 
+                            BackgroundColor="Transparent" 
+                            BorderColor="Grey" 
+                            Padding="0">
+                            <Entry 
+                                Placeholder="Address" 
+                                TextColor="Black"
+                                Margin="5, 0"
+                                HeightRequest="50"  
+                                Focused="Entry_Focused"
+                                Unfocused="Entry_Unfocused"
+                                BackgroundColor="Transparent">
+                            </Entry>
+                        </Frame>
+
+                        <!-- Signup Button -->
+                        <Button 
+                            Text="Sign Up"
+                            CornerRadius="10"
+                            Margin="0,20,0,80" 
+                            TextColor="White"
+                            HeightRequest="50"
+                            BackgroundColor="#518551"/>
+
+                    </StackLayout>
+                </StackLayout>
+
+            </Frame>
+        </Grid>
+
+    </ScrollView>
+
+
+</ContentPage>

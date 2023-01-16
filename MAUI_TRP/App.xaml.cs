@@ -1,4 +1,6 @@
-﻿namespace MAUI_TRP;
+﻿using MAUI_TRP.Views;
+
+namespace MAUI_TRP;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new NavigationPage(new RegistrationPage());
 	}
 }

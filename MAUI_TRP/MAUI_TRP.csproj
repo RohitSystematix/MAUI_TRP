@@ -48,4 +48,33 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Images\app_logo.svg" />
+	  <None Remove="Resources\Images\img.svg" />
+	  <None Remove="Resources\Images\landing_background.svg" />
+	  <None Remove="Resources\Images\one.svg" />
+	  <None Remove="Resources\Images\splash.svg" />
+	  <None Remove="Resources\Images\splash_background.svg" />
+	  <None Remove="Resources\Images\square.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="plist-cil" Version="2.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\DemoView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Home.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\RegistrationPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
